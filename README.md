@@ -16,8 +16,9 @@ You will also need [Git](https://git-scm.com), [CMake](https://cmake.org) and [M
 git clone https://github.com/ThomasNotTom/OOLibAV.git
 ```
 
-1. Go into the build folder
+1. Go into the project, then build folder
 ```bash
+cd OOLibAV
 cd build
 ```
 

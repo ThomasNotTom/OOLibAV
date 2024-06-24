@@ -21,6 +21,8 @@ target_include_directories(OOLibAV
         ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 
+### BEGIN LINKING WITH LIBAV
+
 # Include libav
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBAV REQUIRED IMPORTED_TARGET
@@ -35,6 +37,8 @@ pkg_check_modules(LIBAV REQUIRED IMPORTED_TARGET
 
 # Link libav
 target_link_libraries(OOLibAV PkgConfig::LIBAV)
+
+### END LINKING WITH LibAV
 
 # Installation
 include(GNUInstallDirs)

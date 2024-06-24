@@ -1,0 +1,8 @@
+# Define the include directory for OOLibAV
+set(OOLibAV_INCLUDE_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_INCLUDEDIR}")
+
+# Import the targets from the installed location
+include("${CMAKE_CURRENT_LIST_DIR}/OOLibAVTargets.cmake")
+
+# Export package config
+export(PACKAGE OOLibAV)

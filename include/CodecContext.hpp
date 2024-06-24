@@ -6,7 +6,7 @@ extern "C" {
 
 class CodecContext : public AVCodecContext {
 public:
-    CodecContext(const AVCodec* codec = nullptr);
+    CodecContext(const AVCodec* codec);
     ~CodecContext();
 
     AVCodecContext* operator->();
